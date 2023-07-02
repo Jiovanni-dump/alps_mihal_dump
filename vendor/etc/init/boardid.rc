@@ -1,0 +1,10 @@
+#L19A-T code for HQ-237158 by shaoweijie at 20221018 start
+service board_id /vendor/bin/boardid_bin
+    class main
+    user root
+    oneshot
+    disabled
+
+on early-init
+    start board_id
+#L19A-T code for HQ-237158 by shaoweijie at 20221018 end
